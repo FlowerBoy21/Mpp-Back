@@ -4,14 +4,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Configuration
-public class WebConfig implements WebMvcConfigurer {
-
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**") // Allow CORS for all endpoints
-            .allowedOrigins("http://localhost:8081") // Specify the origin of your frontend application
-            .allowedMethods("GET", "POST", "PUT", "DELETE") // Specify allowed HTTP methods
-            .allowedHeaders("*"); // Allow all headers; 
-    }
-}
+//@Configuration
+//public class WebConfig implements WebMvcConfigurer {
+//
+//    @Override
+//    public void addCorsMappings(CorsRegistry registry) {
+//        registry.addMapping("/**") // Allow CORS for all endpoints
+//            .allowedOrigins("http://localhost:8081") // Specify the origin of your frontend application
+//            .allowedMethods("GET", "POST", "PUT", "DELETE") // Specify allowed HTTP methods
+//            .allowedHeaders("*"); // Allow all headers;
+//    }
+//}
